@@ -1,3 +1,3 @@
 window.addEventListener('load', () => {
-    console.log('scripts loaded!!');
+    console.log('Scripts File Connected');
 })

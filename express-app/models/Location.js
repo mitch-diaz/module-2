@@ -11,8 +11,8 @@ const locationSchema = new Schema({
     streetName: String,
     zip: Number,
     city: String,
-    state: String,
-    animals: [{type: Schema.Types.ObjectId, ref: 'Animal'}]
+    State: String,
+    animals: {type: [{type: Schema.Types.ObjectId, ref: 'Animal'}]}
 }, {
     timestamps: true
 })

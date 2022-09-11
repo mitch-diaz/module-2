@@ -18,7 +18,10 @@ const animalSchema = new Schema({
     },
     siblings: {
         type: [
-            {type: Schema.Types.ObjectId, ref: 'Animal'}
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'Animal'
+            }
         ]
     },
     aggressive: {
@@ -27,11 +30,11 @@ const animalSchema = new Schema({
     },
     petType: {
         type: String,
-        enum: ['Cat', 'Dog', 'Gangsta Hamster', 'Parot', 'Snake']
-    } 
+        enum: ['Cat', 'Dog', 'Gangster Hamster', 'Parot', 'Snake']
+    }
 }, {
     timestamps: true
 })
 
 const Animal = model('Animal', animalSchema);
-module.exports = Cat;
+module.exports = Animal;
